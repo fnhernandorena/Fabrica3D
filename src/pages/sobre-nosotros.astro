@@ -1,0 +1,144 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import fab3d from "@/image/fab3d.jpg"
+import mtn from '@/image/mtn.jpg'
+import amd from '@/image/amd.png'
+import nvidia from '@/image/nvidia.png'
+import corsair from '@/image/corsair.png'
+import radeon from '@/image/radeon.png'
+import aserrin from '@/image/aserrin.png'
+import camara from '@/image/camara.png'
+import cortina from '@/image/cortina.png'
+import sop from '@/image/sop.png'
+import soporte from '@/image/soporte.png'
+import griego from '@/image/griego.png'
+import org from '@/image/org.png'
+import rig from '@/image/rig.png'
+
+---
+
+<Layout title="Fabrica 3D | Sobre nosotros">
+  <main>
+    <h3 class="text-4xl font-medium  my-4 border-blue-950 border-b-8 border-r-8">
+      Quienes somos
+    </h3>
+    <div
+      class="flex flex-row flex-wrap lg:flex-nowrap justify-center items-center gap-2"
+    >
+      <Image
+        src={fab3d}
+        alt="Fabrica 3d logo"
+        class="rounded-full w-96 animate-spin animate-once animate-duration-700 animate-ease-in-out"
+      />
+      <p>
+        Situados en San Pedro, Buenos Aires y con mas de 20 maquinas trabajando
+        de dia y de noche somos los mayores fabricantes de la zona. <i
+          class="fa-solid fa-industry"></i><br />
+        Contamos con diseñadores, desarrolladores de software y web managers para
+        poder brindar el mejor y mas rapido servicio. <i
+          class="fa-solid fa-rocket"></i>
+      </p>
+    </div>
+    <h3 class="text-4xl font-medium  my-4 border-blue-950 border-b-8 border-r-8">
+      Comienzos...
+    </h3>
+    <div
+      class="flex flex-row-reverse flex-wrap lg:flex-nowrap justify-center items-center gap-2"
+    >
+      <Image
+        src={mtn}
+        alt="Keycaps impresas en 3d"
+        class="rounded-3xl w-96"
+      />
+      <p>
+        A principios de 2019, comenzamos en un casa comprando una impresora
+        basica. Al principio fabricabamos teclas de personalizadas sobre
+        videojuegos y cosas plasticas que se le dañaban a los vecinos o
+        conocidos.<br />
+        Con el paso de el tiempo crecimos en cuanto a personal, mejoramos en el diseño
+        3D y aumentamos la cantidad y calidad de las maquinas.
+      </p>
+    </div>
+    <h3 class="text-4xl font-medium my-4 border-blue-950 border-b-8 border-r-8">
+      Productos
+    </h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="flex justify-center items-center">
+        <Image
+          src={amd}
+          alt="soporte placa de video griego"
+          class="rounded-3xl max-w-80 max-h-96"
+        />
+      </div>
+      <div class="flex justify-center items-center">
+        <Image
+          src={nvidia}
+          alt="soporte placa de video nvidia"
+          class="rounded-3xl max-w-80 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={corsair}
+          alt="Organizador de cables"
+          class="rounded-3xl max-w-96 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={radeon}
+          alt="soporte placa de video radeon"
+          class="rounded-3xl max-w-80 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={aserrin}
+          alt="muñeco tamaño real impreso en 3d"
+          class="rounded-3xl max-w-96 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={soporte}
+          alt="soporte placa de video griego"
+          class="rounded-3xl max-w-80 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={rig}
+          alt="Yale impreso en 3d"
+          class="rounded-3xl max-w-96 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={camara}
+          alt="Casco de Ironman tamaño real"
+          class="rounded-3xl max-w-96 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={cortina}
+          alt="Rig de mineria"
+          class="rounded-3xl max-w-96 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={sop}
+          alt="Soporte monitor samsung"
+          class="rounded-3xl max-w-96 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={griego}
+          alt="Yale impreso en 3d"
+          class="rounded-3xl max-w-72 max-h-96"
+        />
+      </div><div class="flex justify-center items-center">
+        <Image
+          src={org}
+          alt="Yale impreso en 3d"
+          class="rounded-3xl max-w-96 max-h-96"
+        />
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Spam from "../components/Spam.astro";
+import { Image } from "astro:assets";
+import fab from '@/image/fab.jpeg';
+import casco from '@/image/casco.jpg'
+import mun from '@/image/mun.jpeg'
+---
+
+<Layout title="Fabrica 3D">
+  <main>
+    <div class="flex justify-center">
+      <Spam />
+    </div>
+    <h3 class="text-4xl font-medium my-4 border-blue-950 border-b-8 border-r-8">
+      Introduccion
+    </h3>
+    <div
+      class="flex flex-row flex-wrap lg:flex-nowrap justify-center items-center gap-2"
+    >
+      <Image
+        src={fab}
+        alt="Sede inicial fabrica 3d"
+        class="rounded-3xl w-96"
+        loading="lazy"
+        decoding="async"
+      />
+      <p class="p-2">
+        La impresión 3D, también conocida como fabricación aditiva, es un
+        proceso de fabricación que crea objetos tridimensionales capa por capa a
+        partir de datos digitales. A diferencia de los métodos tradicionales de
+        fabricación, que suelen ser sustractivos (como la talla o el moldeo), la
+        impresión 3D agrega material de forma controlada para construir el
+        objeto final. <br />
+        El proceso de impresión 3D generalmente comienza con la creación de un modelo
+        digital en un software de diseño asistido por computadora (CAD) o mediante
+        técnicas de escaneo 3D. Este modelo se divide entonces en capas sucesivas
+        mediante software de corte específico para la impresora 3D. Cada capa se
+        imprime de manera individual, y las capas se van apilando unas sobre otras
+        hasta que se completa el objeto.
+      </p>
+    </div>
+    <h3 class="text-4xl font-medium my-4 border-blue-950 border-b-8 border-r-8">
+      Usos y ventajas
+    </h3>
+    <div
+      class="flex flex-row-reverse flex-wrap lg:flex-nowrap justify-center items-center gap-2"
+    >
+      <Image
+        src={casco}
+        alt="Casco de ironman escala real"
+        class="rounded-3xl w-96"
+    loading="lazy"
+    decoding="async"
+      />
+      <p class="p-2">
+        La impresión 3D se utiliza en una amplia gama de industrias, incluyendo
+        la automotriz, la aeroespacial, la médica, la arquitectura, la moda y la
+        educación, entre otras. Sus aplicaciones van desde la prototipación
+        rápida y la fabricación personalizada hasta la producción en masa de
+        piezas finales. <br />
+
+        Entre las ventajas de la impresión 3D se incluyen la capacidad de crear
+        geometrías complejas, la personalización a escala individual, la
+        reducción de residuos de material y tiempos de desarrollo más cortos.
+        Sin embargo, también enfrenta desafíos como la limitación en el tamaño y
+        la velocidad de impresión, así como la calidad y las propiedades del
+        material. <br />
+        En resumen, la impresión 3D es una tecnología revolucionaria que está transformando
+        la forma en que se diseñan, fabrican y distribuyen los objetos en una amplia
+        variedad de industrias, ofreciendo un potencial significativo para la innovación
+        y la creatividad.
+      </p>
+    </div>
+   
+    <h3 class="text-4xl font-medium my-4 border-blue-950 border-b-8 border-r-8">
+      Que tipo de impresion utilizamos
+    </h3>
+    <div
+      class="flex flex-row-reverse flex-wrap lg:flex-nowrap justify-center items-center gap-2"
+    >
+      <Image
+        src={mun}
+        alt="muñeco impreso en 3d"
+        class="rounded-3xl w-96"
+        loading="lazy"
+        decoding="async"
+      />
+      <p class="p-2">
+        En nuestra empresa, optamos por la tecnología de Fabricación por
+        Depósito Fundido (FDM) debido a su accesibilidad, simplicidad y
+        versatilidad en la elección de materiales. Este método ofrece una amplia
+        gama de opciones de plásticos, facilitando la adaptación a diferentes
+        requisitos de diseño y funcionalidad. Además, la capacidad de FDM para
+        producir piezas de gran tamaño de manera eficiente y económica, junto
+        con su alta resistencia mecánica y durabilidad, lo convierten en la
+        opción ideal para satisfacer las diversas necesidades de nuestros
+        clientes en varias industrias.<br />
+        En resumen, la tecnología FDM destaca por su eficiencia, versatilidad y calidad
+        en la producción de objetos tridimensionales, lo que la convierte en nuestra
+        elección preferida para cumplir con los requerimientos de proyectos industriales
+        y comerciales.
+      </p>
+    </div>
+  </main>
+</Layout>

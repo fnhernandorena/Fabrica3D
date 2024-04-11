@@ -1,0 +1,48 @@
+---
+const currentPath = Astro.url.pathname;
+import { Image } from "astro:assets";
+import logo from "@/image/logo.png";
+---
+
+<nav class="flex w-full justify-center mb-5 p-2 text-white">
+  <div class="w-full lg:w-11/12 flex flex-wrap sm:flex-nowrap justify-center items-center">
+      <Image
+        src={logo}
+        alt="Fabrica 3D"
+        class="h-36 w-36 rounded-full"
+        loading="lazy"
+        decoding="async"
+      />
+    <div
+      class="flex flex-wrap justify-center animate-fade-right animate-once animate-duration-500 animate-ease-linear"
+    >
+      <div class="flex flex-wrap justify-center">
+        <a
+          class={currentPath === "/"
+            ? "bg-black p-4 rounded-xl m-1  w-32 md:w-64 text-center hover:text-sky-400"
+            : "bg-blue-950 p-4 rounded-xl m-1  w-32 md:w-64 text-center hover:bg-black duration-300"}
+          href="/"><p class="hidden md:inline">Inicio</p> <i class="fa-solid fa-house"></i></a
+        >
+        <a
+          class={currentPath === "/sobre-nosotros/"
+            ? "bg-black p-4 rounded-xl m-1  w-32 md:w-64 text-center hover:text-sky-400"
+            : "bg-blue-950 p-4 rounded-xl m-1  w-32 md:w-64 text-center hover:bg-black duration-300"}
+          href="/sobre-nosotros"
+          ><p class="hidden md:inline">Sobre nosotros</p> <i class="fa-solid fa-paperclip"></i></a>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <a
+          class={currentPath === "/contacto/"
+            ? "bg-black p-4 rounded-xl m-1 w-32 md:w-64 text-center hover:text-sky-400"
+            : "bg-blue-950 p-4 rounded-xl m-1  w-32 md:w-64 text-center hover:bg-black duration-300"}
+          href="/contacto"><p class="hidden md:inline">Contacto</p> <i class="fa-solid fa-phone"></i></a
+        >
+        <a
+          class="bg-blue-950 p-4 rounded-xl m-1  w-32 md:w-64 text-center hover:bg-black duration-300"
+          href="https://fabrica-3d.com.ar/"
+          ><p class="hidden md:inline">Tienda</p> <i class="fa-solid fa-cart-arrow-down"></i></a>
+      </div>
+    </div>
+    <p></p>
+  </div>
+</nav>
