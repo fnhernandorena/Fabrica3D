@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import logo from "@/image/logo.png";
 ---
 
-<nav class="flex justify-center mb-1 md:mb-5 p-2 text-white">
+<nav class="flex w-full mb-1 md:mb-5 p-2 text-white">
   <div
     class="w-full md:gap-10 lg:w-11/12 flex flex-wrap sm:flex-nowrap justify-center items-center"
   >
@@ -16,39 +16,38 @@ import logo from "@/image/logo.png";
       decoding="async"
     />
     <div
-      class="flex flex-wrap max-w-4xl justify-center animate-fade-right animate-once animate-duration-500 animate-ease-linear"
-    >
+      class="flex flex-wrap justify-center items-center animate-fade-right animate-once animate-duration-500 animate-ease-linear gap-4"
+    ><div class="flex gap-4">
         <a
           class={currentPath === "/"
-            ? "bg-black p-4 rounded-xl m-1  w-24 sm:w-32 md:w-48 lg:w-64 text-center hover:text-sky-400"
-            : "bg-blue-950 p-4 rounded-xl m-1  w-24 sm:w-32 md:w-48 lg:w-64 text-center hover:bg-black duration-300"}
+            ? "text-zinc-800 underline"
+            : "text-zinc-800 hover:underline"}
           href="/"
-          ><p class="hidden lg:inline">Inicio</p>
-          <i class="fa-solid fa-house"></i></a
+          >Inicio
+          </a
         >
         <a
           class={currentPath === "/sobre-nosotros/"
-            ? "bg-black p-4 rounded-xl m-1  w-24 sm:w-32 md:w-48 lg:w-64 text-center hover:text-sky-400"
-            : "bg-blue-950 p-4 rounded-xl m-1  w-24 sm:w-32 md:w-48 lg:w-64 text-center hover:bg-black duration-300"}
+            ? "text-zinc-800 underline"
+            : "text-zinc-800 hover:underline"}
           href="/sobre-nosotros"
-          ><p class="hidden lg:inline">Sobre nosotros</p>
-          <i class="fa-solid fa-paperclip"></i></a
-        >
-
+          >Sobre nosotros
+         </a
+        ></div>
+<div class="flex gap-4">
         <a
           class={currentPath === "/contacto/"
-            ? "bg-black p-4 rounded-xl m-1 w-24 sm:w-32 md:w-48 lg:w-64 text-center hover:text-sky-400"
-            : "bg-blue-950 p-4 rounded-xl m-1  w-24 sm:w-32 md:w-48 lg:w-64 text-center hover:bg-black duration-300"}
+            ? "text-zinc-800 underline"
+            : "text-zinc-800 hover:underline"}
           href="/contacto"
-          ><p class="hidden lg:inline">Contacto</p>
-          <i class="fa-solid fa-phone"></i></a
+          >Contacto
+         </a
         >
       <a
-        class="bg-blue-950 p-4 rounded-xl m-1 w-full text-center hover:bg-black duration-300 hover:text-sky-400 animate-rotate-x animate-once animate-delay-[1000ms] animate-ease-in-out animate-normal animate-fill-forwards"
+        class="text-zinc-800  hover:underline duration-300"
         href="https://fabrica-3d.com.ar/"
-        >Mas de 15% off en todos los productos de la tienda <i
-          class="fa-solid fa-gift"></i></a
-      >
+        >Tienda </a
+      ></div>
     </div>
     <p></p>
   </div>
