@@ -4,9 +4,9 @@ import { Image } from "astro:assets";
 import logo from "@/image/logo.png";
 ---
 
-<nav class="flex w-full mb-1 md:mb-5 p-2 text-white">
+<nav class="flex w-full mb-1 md:mb-5 p-2 bg-zinc-400 text-white">
   <div
-    class="w-full md:gap-10 lg:w-11/12 flex flex-wrap sm:flex-nowrap justify-center items-center"
+    class="w-full md:gap-10 lg:w-11/12 flex flex-wrap sm:flex-nowrap justify-between items-center"
   >
     <Image
       src={logo}
@@ -20,7 +20,7 @@ import logo from "@/image/logo.png";
     ><div class="flex gap-4">
         <a
           class={currentPath === "/"
-            ? "text-zinc-800 underline"
+            ? "text-zinc-800"
             : "text-zinc-800 hover:underline"}
           href="/"
           >Inicio
@@ -28,7 +28,7 @@ import logo from "@/image/logo.png";
         >
         <a
           class={currentPath === "/sobre-nosotros/"
-            ? "text-zinc-800 underline"
+            ? "text-zinc-800"
             : "text-zinc-800 hover:underline"}
           href="/sobre-nosotros"
           >Sobre nosotros
@@ -37,7 +37,7 @@ import logo from "@/image/logo.png";
 <div class="flex gap-4">
         <a
           class={currentPath === "/contacto/"
-            ? "text-zinc-800 underline"
+            ? "text-zinc-800"
             : "text-zinc-800 hover:underline"}
           href="/contacto"
           >Contacto
