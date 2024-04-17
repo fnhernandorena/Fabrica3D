@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import logo from "@/image/logo.png";
 ---
 
-<nav class="flex w-full mb-1 md:mb-5 p-2 bg-zinc-400 text-white">
+<nav class="flex w-full justify-center mb-1 md:mb-5 p-2 bg-zinc-900 text-white">
   <div
     class="w-full md:gap-10 lg:w-11/12 flex flex-wrap sm:flex-nowrap justify-between items-center"
   >
@@ -16,39 +16,43 @@ import logo from "@/image/logo.png";
       decoding="async"
     />
     <div
-      class="flex flex-wrap justify-center items-center animate-fade-right animate-once animate-duration-500 animate-ease-linear gap-4"
-    ><div class="flex gap-4">
+      class="flex flex-wrap  justify-center items-center animate-fade-right animate-once animate-duration-500 animate-ease-linear gap-4"
+    >
         <a
           class={currentPath === "/"
-            ? "text-zinc-800"
-            : "text-zinc-800 hover:underline"}
+            ? ""
+            : " hover:underline"}
           href="/"
           >Inicio
           </a
         >
         <a
           class={currentPath === "/sobre-nosotros/"
-            ? "text-zinc-800"
-            : "text-zinc-800 hover:underline"}
+            ? ""
+            : " hover:underline"}
           href="/sobre-nosotros"
           >Sobre nosotros
          </a
-        ></div>
-<div class="flex gap-4">
-        <a
-          class={currentPath === "/contacto/"
-            ? "text-zinc-800"
-            : "text-zinc-800 hover:underline"}
-          href="/contacto"
-          >Contacto
-         </a
         >
       <a
-        class="text-zinc-800  hover:underline duration-300"
+        class=" hover:underline duration-300"
         href="https://fabrica-3d.com.ar/"
         >Tienda </a
-      ></div>
+      >
     </div>
-    <p></p>
+    <div>
+    <a class="mx-2"
+      href="https://walink.co/ea885a"
+      ><i class="fa-brands fa-whatsapp"></i></a
+    >
+    <a class="mx-2"
+      href="https://www.instagram.com/fabrica__3d/"
+      ><i class="fa-brands fa-instagram"></i></a
+    >
+    <a class="mx-2"
+      href="mailto:lazaro.efarinias@gmail.com"
+      ><i class="fa-regular fa-envelope"> </i></a
+    >
+    </div>
   </div>
 </nav>
