@@ -1,58 +1,47 @@
 ---
-const currentPath = Astro.url.pathname;
 import { Image } from "astro:assets";
 import logo from "@/image/logo.png";
 ---
 
 <nav class="flex w-full justify-center mb-1 md:mb-5 p-2 bg-zinc-900 text-white">
   <div
-    class="w-full md:gap-10 lg:w-11/12 flex flex-wrap sm:flex-nowrap justify-between items-center"
+    class="w-full gap-4 md:gap-10 lg:w-11/12 flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center text-3xl"
   >
     <Image
       src={logo}
       alt="Fabrica 3D"
-      class="h-36 w-36 rounded-full"
+      class="h-24 w-24 rounded-full"
       loading="lazy"
       decoding="async"
     />
     <div
-      class="flex flex-wrap  justify-center items-center animate-fade-right animate-once animate-duration-500 animate-ease-linear gap-4"
+      class="flex flex-wrap justify-center items-center animate-fade-right animate-once animate-duration-500 animate-ease-linear gap-4"
     >
-        <a
-          class={currentPath === "/"
-            ? ""
-            : " hover:underline"}
-          href="/"
-          >Inicio
-          </a
-        >
-        <a
-          class={currentPath === "/sobre-nosotros/"
-            ? ""
-            : " hover:underline"}
-          href="/sobre-nosotros"
-          >Sobre nosotros
-         </a
-        >
+      <a class="hover:text-zinc-400 duration-300" href="/">Inicio </a>
+      <a class="hover:text-zinc-400 duration-300" href="/sobre-nosotros/"
+        >Sobre nosotros
+      </a>
       <a
-        class=" hover:underline duration-300"
+        class="hover:text-zinc-400 duration-300"
         href="https://fabrica-3d.com.ar/"
-        >Tienda </a
-      >
+        >Tienda
+      </a>
     </div>
     <div>
-    <a class="mx-2"
-      href="https://walink.co/ea885a"
-      ><i class="fa-brands fa-whatsapp"></i></a
-    >
-    <a class="mx-2"
-      href="https://www.instagram.com/fabrica__3d/"
-      ><i class="fa-brands fa-instagram"></i></a
-    >
-    <a class="mx-2"
-      href="mailto:lazaro.efarinias@gmail.com"
-      ><i class="fa-regular fa-envelope"> </i></a
-    >
+      <a
+        class="mx-2 hover:text-green-500 duration-300"
+        href="https://walink.co/ea885a"><i class="fa-brands fa-whatsapp"></i></a
+      >
+      <a
+        class="mx-2 hover:text-pink-500 duration-300"
+        href="https://www.instagram.com/fabrica__3d/"
+        ><i class="fa-brands fa-instagram"></i></a
+      >
+      <a
+        class="mx-2 hover:text-blue-500 duration-300"
+        href="mailto:lazaro.efarinias@gmail.com"
+        ><i class="fa-regular fa-envelope"> </i></a
+      >
     </div>
   </div>
 </nav>
